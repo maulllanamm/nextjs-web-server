@@ -7,8 +7,14 @@ let transactionSchema = mongoose.Schema(
         require: [true, "Nama game harus di isi"],
       },
       category: {
-        type: String,
-        require: [true, "Kategori game harus di isi"],
+        name: {
+          type: String,
+          require: [true, "Nama game harus di isi"],
+        },
+        _id: {
+          type: String,
+          require: [true, "Nama game harus di isi"],
+        },
       },
       thumbnail: {
         type: String,
